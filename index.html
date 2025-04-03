@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeStore API</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="controls">
+        <input type="text" id="search" placeholder="Поиск..." oninput="filterProducts()">
+        <select id="sort" onchange="filterProducts()">
+            <option value="default">Сортировка</option>
+            <option value="asc">От дешевых к дорогим</option>
+            <option value="desc">От дорогих к дешевым</option>
+        </select>
+        <select id="category" onchange="filterProducts()">
+            <option value="all">Все категории</option>
+            <option value="jewelery">Украшения</option>
+            <option value="electronics">Техника</option>
+            <option value="men's clothing">Мужская одежда</option>
+            <option value="women's clothing">Женская одежда</option>
+        </select>
+    </div>
+    <div class="container" id="products"></div>
+
+   <script src="./main.js"></script>
+</body>
+</html>
